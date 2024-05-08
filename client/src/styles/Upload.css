@@ -1,0 +1,141 @@
+.upload {
+  background-color: var(--chat-bg-color);
+  height: 95vh;
+  z-index: 0;
+}
+
+.upload h1 {
+  text-align: center;
+  margin: 0;
+  padding: 50px 0;
+}
+
+.upload-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.upload-input-container input {
+  font-size: 20px;
+  width: 96%;
+  margin: 0 auto;
+  border: none;
+  background-color: var(--input-bg-color);
+  padding: 12px 15px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 54px 55px,
+              rgba(0, 0, 0, 0.05) 0 -12px 30px,
+              rgba(0, 0, 0, 0.05) 0 4px 6px,
+              rgba(0, 0, 0, 0.05) 0 12px 3px,
+              rgba(0, 0, 0, 0.05) 0 -3px 5px;
+}
+
+.upload-input-container input:focus {
+  outline: none;
+}
+
+.upload-input-container button {
+  border: solid 0.5px var(--button-border-color);
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  width: 96%;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.upload-input-container button:hover {
+  background-color: var(--button-bg-hover-color);
+  border: solid 0.5px var(--button-border-hover-color);
+}
+
+.upload-input-container button:active {
+  font-size: 1.1em;
+}
+
+.upload-input-container button:disabled {
+  color: var(--button-disabled-color);
+  background-color: var(--button-disabled-bg-color);
+  cursor: none;
+}
+
+.error {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--info-color);
+  padding: 0 5px;
+}
+
+.resend-email {
+  display: block;
+  margin: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--info-color);
+}
+
+dialog {
+  background-color: var(--header-bg-color);
+  border-radius: 6px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 54px 55px,
+              rgba(0, 0, 0, 0.05) 0 -12px 30px,
+              rgba(0, 0, 0, 0.05) 0 4px 6px,
+              rgba(0, 0, 0, 0.05) 0 12px 3px,
+              rgba(0, 0, 0, 0.05) 0 -3px 5px;
+}
+
+dialog::backdrop {
+  background: linear-gradient(45deg, #fff, #343541);
+  opacity: 0.8;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  text-align: center;
+}
+
+.popup img {
+  width: 20px;
+  height: 20px;
+  margin-top: 3%;
+  border-radius: 50%;
+}
+
+.popup h3 {
+  font-size: clamp(10px, 5vw, 20px); /* The trick to have a dynamic font size. */
+}
+
+.popup p {
+  font-size: clamp(7px, 2vw, 15px);
+}
+
+.popup button {
+  border: solid 0.5px var(--button-border-color);
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  width: 96%;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.popup button:hover {
+  background-color: var(--button-bg-hover-color);
+  border: solid 0.5px var(--button-border-hover-color);
+}
+
+.popup button:active {
+  font-size: 1.1em;
+}
